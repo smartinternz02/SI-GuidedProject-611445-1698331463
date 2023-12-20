@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploratory Data Analysis (EDA) for Lumpy Skin Disease</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Exploratory Data Analysis (EDA) for Lumpy Skin Disease</h1>
+
+    <div class="eda-results">
+        <h2>Data Distribution</h2>
+
+        <p>The distribution of the geographical and environmental factors used to predict LSD is crucial for understanding the relationship between these factors and the occurrence of LSD.</p>
+
+        <ul>
+            <li>Monthly Cloud Cover Distribution: {{ monthly_cloud_cover_distribution }}</li>
+            <li>Diurnal Temperature Range Distribution: {{ diurnal_temperature_range_distribution }}</li>
+            <li>Frost Day Frequency Distribution: {{ frost_day_frequency_distribution }}</li>
+            <li>Potential Evapotranspiration Distribution: {{ potential_evapotranspiration_distribution }}</li>
+            <li>Precipitation Distribution: {{ precipitation_distribution }}</li>
+        </ul>
+
+        <h2>Correlation Analysis</h2>
+
+        <p>Correlation analysis helps identify the strength and direction of relationships between different variables. In the context of LSD prediction, understanding these correlations can provide insights into the factors that influence the spread of the disease.</p>
+
+        <ul>
+            <li>Monthly Cloud Cover vs. Diurnal Temperature Range Correlation: {{ monthly_cloud_cover_vs_diurnal_temperature_range_correlation }}</li>
+            <li>Monthly Cloud Cover vs. Frost Day Frequency Correlation: {{ monthly_cloud_cover_vs_frost_day_frequency_correlation }}</li>
+            <li>Monthly Cloud Cover vs. Potential Evapotranspiration Correlation: {{ monthly_cloud_cover_vs_potential_evapotranspiration_correlation }}</li>
+            <li>Monthly Cloud Cover vs. Precipitation Correlation: {{ monthly_cloud_cover_vs_precipitation_correlation }}</li>
+        </ul>
+    </div>
+
+    <a href="/">
+        <button type="button">Go Back</button>
+    </a>
+</body>
+</html>

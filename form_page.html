@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lumpy Skin Disease Prediction Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Lumpy Skin Disease Prediction</h1>
+    <br>
+
+    <p>Please enter the following geographical details to receive a prediction for the occurrence of Lumpy Skin Disease (LSD) in your area:</p>
+    <br>
+
+    <form action="/predict" method="GET">
+        <div class="form-group">
+            <label for="monthlyCloudCover">Monthly Cloud Cover in percent:</label>
+            <input type="number" id="monthlyCloudCover" name="monthly_cloud_cover" placeholder="Enter monthly cloud cover" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="diurnalTemperatureRange">Diurnal Temperature Range in degrees Celsius:</label>
+            <input type="number" id="diurnalTemperatureRange" name="diurnal_temperature_range" placeholder="Enter diurnal temperature range" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="frostDayFrequency">Frost Day Frequency in a month:</label>
+            <input type="number" id="frostDayFrequency" name="frost_day_frequency" placeholder="Enter frost day frequency" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="potentialEvapotranspiration">Potential Evapotranspiration in millimeters per day:</label>
+            <input type="number" id="potentialEvapotranspiration" name="potential_evapotranspiration" placeholder="Enter potential evapotranspiration" class="form-control">
+        </div>
+
+        <div class="form-group">
+            <label for="precipitation">Precipitation in millimeters per month:</label>
+            <input type="number" id="precipitation" name="precipitation" placeholder="Enter precipitation" class="form-control">
+        </div>
+
+        <br>
+
+        <input type="submit" value="Predict" class="btn btn-primary">
+    </form>
+</body>
+</html>
